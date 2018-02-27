@@ -195,5 +195,24 @@ h3 {
     color: @ds6-color-link-visited;
 }
 
+.demo-link-inline-default,
+.demo-link-inline-visited,
+.demo-link-inline-default:visited,
+.demo-link-inline-visited:visited {
+    color: @ds6-color-text-default;
+}
+
+.demo-link-inline-default,
+.demo-link-inline-default:visited, {
+    text-decoration-color: @ds6-color-link-default;
+    text-decoration: underline;
+}
+
+.demo-link-inline-visited,
+.demo-link-inline-visited:visited, {
+    text-decoration-color: @ds6-color-link-visited;
+    text-decoration: underline;
+}
+
 @import "../highlight.less";
 @import "../pygments.less";

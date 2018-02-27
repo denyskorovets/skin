@@ -10,8 +10,24 @@ body {
 
 a {
     color: @ds6-color-link-default;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 
     &:visited {
         color: @ds6-color-link-visited;
+    }
+}
+
+p a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: @ds6-color-link-default;
+
+    &:visited {
+        color: inherit;
+        text-decoration-color: @ds6-color-link-visited;
     }
 }
